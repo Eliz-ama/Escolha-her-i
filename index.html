@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="js/index.js" type="text/javascript"></script>
+    <title>Tarefa do heroi</title>
+</head>
+<body>
+    <div class="fundo"> <!--div backgroud-->
+        <div class="principal"> <!--div tela branca-->
+            <p class="titulo">Escolha seu universo de super-heróis: DC ou Marvel</p>
+            <div class="opcao"> <!--div da letra-->
+                <input type="radio" class="universo" id="universo" name="universo" value="dc" onclick="opcaopersonagem()">DC<br>
+                <input type="radio" class="universo" id="universo" name="universo" value="marvel" onclick="opcaopersonagem()">Marvel<br>
+            </div>
+            <div id="escolhadc">
+                <p class="titulo">Escolha seu super herói favorito:<br><br>°batman <br> °super-men <br> °aqua-men <br> °mulher-maravilha <br> °lanterna-verde</p>
+                <input type="text" class="heroi1" id="heroi1"><br>
+
+                <p class="titulo">Escolha seu super vilão favorito: <br><br> °arlequina <br> °adão negro <br> °exterminador <br> °coringa <br> °lex luthor</p>
+                <input type="text" class="vilao1" id="vilao1"><br>
+
+                <div class="resultado">
+
+                    <button onclick="resultado()">Clique aqui para gerar seu resultado</button><br>
+
+                </div>
+            </div>
+
+            <div id="escolhamarvel">
+                <p class="titulo">Escolha um super-herói:<br> <br> °capitão-américa <br> °homem-de-ferro <br> °viuva-negra <br> °thor <br> °feiticeira-escarlate</p>
+                <input type="text" class="heroi2" id="heroi2"><br>
+
+                <p class="titulo">Escolha um vilão: <br><br> °thanos <br> °gorr <br> °ronan <br> °ikaris <br> aquele-que-permanece</p>
+                <input type="text" class="vilao2" id="vilao2"><br> 
+                <div class="resultado">
+                    <button onclick="resultado()">Clique aqui para gerar seu resultado</button><br>
+                </div>
+            </div>
+            <div id="#resultado">
+                <div id="mostrarHeroi"></div>
+                <div id="mostrarVilao"></div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
